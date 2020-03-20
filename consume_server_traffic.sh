@@ -11,13 +11,13 @@ echo 正在检测环境......
 
 if [[ $a =~ $b ]];then
     echo "Debian"
-    apt-get install screen -y
+    apt-get install wget screen -y
 elif [[ $a =~ $c ]];then
     echo "CentOS"
-    yum install screen -y
+    yum install wget screen -y
 elif [[ $a =~ $d ]];then
     echo "Ubuntu"
-    apt-get install screen -y
+    apt-get install wget screen -y
 else
     echo $a
 fi
